@@ -52,10 +52,10 @@
 /* --- Project/Proposal/Document Sections --- */
 .project-grid {
 
-    display: grid;
+    /* display: grid;
     Keep grid for mobile stacking grid-template-columns: 1fr;
     Stack on mobile gap: 20px;
-    Gap between items
+    Gap between items */
 }
 
 .project-section {
