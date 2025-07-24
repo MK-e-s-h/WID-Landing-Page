@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General container for the main feature grid */
+.freelancer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.freelancer-item {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.freelancer-item:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* freelancer/project sections */
+.feature-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.freelancer-item h3 {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.freelancer-item p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* --- Project/Proposal/Document Sections --- */
+.project-grid {
+
+    display: grid;
+    Keep grid for mobile stacking grid-template-columns: 1fr;
+    Stack on mobile gap: 20px;
+    Gap between items
+}
+
+.project-section {
+    width: 100%;
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 2px;
+    text-align: left;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.project-section h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.coming-soon-badge {
+    background-color: #e0f2f7;
+    color: #007bff;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.project-section p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* --- Neath is growing as your business section --- */
+.neath-section {
+    background-color: #fcfcfc;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.neath-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.neath-header h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.neath-features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.neath-feature-item {
+
+    padding: 0;
+    text-align: center;
+}
+
+.neath-feature-image {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    margin: 0 auto 15px auto;
+    display: block;
+}
+
+.neath-feature-item p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666;
+    margin: 0;
+}
+
+
+/* --- Media Query for Desktop View --- */
+@media (min-width: 768px) {
+    .freelancer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 40px;
+    }
+
+    /* Desktop layout for Project/Proposal/Document */
+    .project-grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .project-section {
+        flex: 1 1 calc(33.33% - 20px);
+        max-width: calc(33.33% - 20px);
+    }
+
+
+    .neath-header h2 {
+        font-size: 2.5em;
+        margin-bottom: 50px;
+    }
+
+    .neath-features-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .neath-feature-item {
+
+        padding: 0;
+    }
+
+    .neath-feature-image {
+        max-width: 150px;
+    }
+
+
+    .neath-section {
+        padding: 80px 0;
+    }
+}
